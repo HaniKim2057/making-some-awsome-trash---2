@@ -1,24 +1,12 @@
-const images = [
-  "0.jpg",
-  "1.jpg",
-  "2.jpg",
-  "3.jpg",
-  "4.jpg",
-  "5.jpg",
-  "6.jpg",
-  "7.jpg",
-  "8.jpg",
-  "9.jpg",
-  "10.jpg",
-  "11.jpg",
-  "12.jpg",
-];
+const clock = document.querySelector(".clock h2");
 
-const chosenImage = images[Math.floor(Math.random() * images.length)];
+function getClock() {
+  const date = new Date();
+  const hours = String(date.getHours()).padStart(2, "0");
+  const minutes = String(date.getMinutes()).padStart(2, "0");
+  const seconds = String(date.getSeconds()).padStart(2, "0");
+  clock.innerText = `${hours}:${minutes}:${seconds}`;
+}
 
-const todayBGImage = document.createElement("img");
-
-todayBGImage.src = `img/${chosenImage}`;
-todayBGImage.classList.add("background");
-
-document.body.appendChild(todayBGImage);
+getClock();
+setInterval(getClock, 1000);

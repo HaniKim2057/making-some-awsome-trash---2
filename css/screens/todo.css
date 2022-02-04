@@ -1,0 +1,45 @@
+.todo {
+  width: 50vw;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.todo__mention {
+  font-size: 35px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
+  margin: 0px 0px 15px 0px;
+}
+.todo__form input {
+  width: 320px;
+  border: none;
+  border-bottom: 5px solid white;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 25px;
+  text-shadow: 2px 2px 0px rgb(0, 0, 0);
+  color: white;
+  text-align: center;
+  margin-bottom: 18px;
+}
+.todo__list li {
+  display: flex;
+  justify-content: space-between;
+  border: none;
+  border-bottom: 0.5px solid white;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  font-size: 20px;
+  text-align: left;
+  padding: 5px 10px 2px 10px;
+  margin: 0px 0px 3px 60px;
+}
+.todo__list li span {
+  margin-right: 30px;
+}
+.todo__list button {
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 50%;
+}

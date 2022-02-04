@@ -9,35 +9,49 @@
   </head>
   <body>
     <form class="login-form hidden">
-      <input
-        required
-        maxlength="15"
-        type="text"
-        placeholder="What is your name?"
-      />
-      <button>Log In</button>
+      <h1 class="login-form__mention">Hello! :) your name?</h1>
+      <div class="login-form__input">
+        <input required maxlength="15" type="text" />
+        <button>Log In</button>
+      </div>
     </form>
-    <h2 class="clock">00:00:00</h2>
-    <h1 class="greeting hidden"></h1>
-    <form class="todo-form">
-      <input type="text" placeholder="Write a To Do and Press Enter" requried />
-    </form>
-    <ul class="todo-list"></ul>
-    <div class="quote">
-      <span></span>
-      <span></span>
-    </div>
+    <main>
+      <div>
+        <div class="clock">
+          <i class="far fa-clock clock__icon"></i>
+          <h2 class="clock__time">00:00:00</h2>
+        </div>
+        <h1 class="greeting hidden"></h1>
+      </div>
+      <div class="todo">
+        <div>
+          <h2 class="todo__mention">To Do For Today?</h2>
+          <form class="todo__form">
+            <input type="text" requried />
+          </form>
+        </div>
+        <ul class="todo__list"></ul>
+      </div>
+      <div class="quote">
+        <span></span>
+        <span></span>
+      </div>
+    </main>
     <div class="weather">
       <span></span>
       <span></span>
     </div>
 
-    <script src="js/dd.js"></script>
+    <script
+      src="https://kit.fontawesome.com/6b69109d06.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/background.js"></script>
     <script src="js/greetings.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>
-    <script src="js/background.js"></script>
     <script src="js/todo.js"></script>
+    <script src="js/dd.js"></script>
     <script src="js/weather.js"></script>
   </body>
 </html>

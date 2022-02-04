@@ -1,0 +1,18 @@
+#no-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 450px) {
+  #no-mobile {
+    position: fixed;
+    z-index: 99;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+  }
+}

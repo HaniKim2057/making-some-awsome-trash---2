@@ -1,4 +1,5 @@
 @import "reset.css";
+@import "media-query.css";
 
 /* Screens */
 @import "screens/login-form.css";

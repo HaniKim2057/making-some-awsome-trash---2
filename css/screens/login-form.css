@@ -31,3 +31,9 @@
   border-radius: 12px;
   color: white;
 }
+.login-form__input button {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  font-size: 40px;
+}
